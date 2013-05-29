@@ -1,0 +1,5 @@
+# Octopress
+
+Instead of rake install use
+
+    bundle exec rake install
