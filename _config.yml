@@ -41,16 +41,16 @@ rdiscount:
     - smart
 pygments: false # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
+paginate: 7          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
-recent_posts: 5       # Posts in the sidebar Recent Posts section
+recent_posts: 7       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/googleplus.html, asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html]
+default_asides: [asides/googleplus.html, asides/recent_posts.html, asides/github.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -64,7 +64,7 @@ default_asides: [asides/googleplus.html, asides/recent_posts.html, asides/github
 
 # Github repositories
 github_user: pjstarifa
-github_repo_count: 0
+github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
 
@@ -74,11 +74,11 @@ twitter_tweet_button: true
 
 # Google +1
 google_plus_one: true
-google_plus_one_size: medium
+google_plus_one_size: small
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user: pjstarifa
+googleplus_user: 111152144460512836733
 googleplus_hidden: false
 
 # Pinboard
@@ -90,11 +90,11 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: visibility
-disqus_show_comment_count: false
+disqus_short_name: pjstarifa
+disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id: UA-27333463-2
+google_analytics_tracking_id: UA-41335109-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
