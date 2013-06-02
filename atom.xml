@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[pj's blog]]></title>
+  <link href="http://pjstarifa.github.io/atom.xml" rel="self"/>
+  <link href="http://pjstarifa.github.io/"/>
+  <updated>2013-05-31T16:40:12+01:00</updated>
+  <id>http://pjstarifa.github.io/</id>
+  <author>
+    <name><![CDATA[Peter J Smith]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Installing Octopress]]></title>
+    <link href="http://pjstarifa.github.io/blog/2013/05/29/Installing-Octopress/"/>
+    <updated>2013-05-29T11:34:00+01:00</updated>
+    <id>http://pjstarifa.github.io/blog/2013/05/29/Installing-Octopress</id>
+    <content type="html"><![CDATA[<p>The default theme for Octopress can be tweaked by changing fonts and layout. The styles are defined using the SCSS dialect of SASS. This is a good place to get some hands on with SASS.</p>
+
+<!-- more -->
+
+
+<p>Instead of rake install use</p>
+
+<pre><code>bundle exec rake install
+</code></pre>
+
+<p>When setting up a separate repo for the source do</p>
+
+<pre><code>git rm origin
+git remote add origin url...
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Started With Octopress]]></title>
+    <link href="http://pjstarifa.github.io/blog/2013/05/29/getting-started-with-octopress/"/>
+    <updated>2013-05-29T11:00:00+01:00</updated>
+    <id>http://pjstarifa.github.io/blog/2013/05/29/getting-started-with-octopress</id>
+    <content type="html"><![CDATA[<h2>Creating, Previewing, and Deploying</h2>
+
+<h3>Create</h3>
+
+<pre><code>rake new_post["title"]
+
+rake new_page[super-awesome]
+# creates /source/super-awesome/index.markdown
+
+rake new_page[super-awesome/page.html]
+# creates /source/super-awesome/page.html
+</code></pre>
+
+<h3>Preview</h3>
+
+<pre><code>bundle exec rake generate   # Generates posts and pages into the public directory
+bundle exec rake watch      # Watches source/ and sass/ for changes and regenerates
+bundle exec rake preview    # Watches, and mounts a webserver at http://localhost:4000
+</code></pre>
+
+<h3>Deploy</h3>
+
+<pre><code>bundle exec rake generate
+bundle exec rake deploy
+</code></pre>
+
+<h3>Update Source Control</h3>
+
+<pre><code>git status
+git add -A
+git commit -m "message"    
+git push origin master
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
